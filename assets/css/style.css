@@ -28,6 +28,10 @@ footer small {
 	background-color: #f4e033;
 }
 
+#secret-footer {
+	background-color: #b5b2ca;
+}
+
 h1 {
 	margin: 0;
 	padding: 0;
@@ -55,6 +59,7 @@ h1 {
 #hover:hover {
 	color: white;
 }
+
 /*end of navigation*/
 
 
@@ -122,13 +127,12 @@ h1 {
 	background-image: url(../images/dog.png);
 }
 
-
 /*end of landing page*/
 
 
 
 
-/*story (about) page*/
+/*story page*/
 #story-header {
 	background-image: url(../images/titlebg.png);
 	background-repeat: no-repeat;
@@ -158,43 +162,78 @@ h1 {
 	font-family: 'Amaranth', sans-serif;
 	background-color: rgb(0,0,0,0.5);
 	padding: 10px;
+	font-size: 20px;
+	margin-top: 5vh;
 }
 
-#story-about-section {
-	margin-top: 10vh;
-	margin-bottom: 10vh;
-}
-
-#story-about-title {
+#story-faqs {
 	background-image: url(../images/titleabout.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
 	text-align: center;
-	height: 150px;
+	height: 175px;
 	padding-top: 5vh;
-	margin-bottom: 0;
+	margin-top: 15vh;
 }
 
-#story-about-content {
-	background-image: url(../images/bgabout.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
+
+
+#accordion .panel{
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	margin-bottom: 5px;
+}
+
+#accordion .panel-heading{
+	padding: 0;
+	border-radius: 0;
 	text-align: center;
-	font-size: 20px;
-	height: 300px;
-	padding-top: 5vh;
+	border: none;
 }
 
-#story-about-text {
+#accordion .panel-title button{
+	display: block;
+	padding: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background: #d09850;
+	transition: all 0.5s ease 0s;
+	border: 2px dashed #c2b9b5;
+}
+
+#accordion .panel-title button:hover{
+	color: #d09850;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background: rgba(82, 60, 31, 1);
+}
+
+#accordion .panel-body{
+	font-size: 18px;
+	color: #fff;
+	background: rgb(0,0,0,0.5);
+	padding: 15px 20px;
+	line-height: 25px;
+	border: none;
+	position: relative;
+}
+
+#accordion .panel-body:after{
+	content: "";
+	position: absolute;
+	top: -30px;
+	left: 40px;
+	border: 15px solid transparent;
+	border-bottom: 15px solid rgb(0,0,0,0.5);
+}
+
+#panel-text {
 	font-family: 'Amaranth', sans-serif;
 }
 
-#social-icon {
-	height: 25px;
-}
-/*end of story (about) page*/
+/*end of story page*/
 
 
 
@@ -300,6 +339,7 @@ h1 {
 	color: white;
 	font-family: 'Amaranth', sans-serif;
 }
+
 /*end of cat page*/
 
 
@@ -425,6 +465,11 @@ h1 {
 	font-family: 'Amaranth', sans-serif;
 }
 
+#dog-secret {
+	text-decoration: none;
+	color: black;
+}
+
 /*end of dog page*/
 
 
@@ -474,13 +519,63 @@ h1 {
 	animation-delay: 1s;
 }
 
-
-
-
-
-
 /*end of gallery page*/
 
+
+
+/*about page*/
+#social-icon {
+	height: 25px;
+}
+
+#about-section {
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+#about-title {
+	background-image: url(../images/titleabout.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	text-align: center;
+	height: 150px;
+	padding-top: 5vh;
+	margin-bottom: 0;
+}
+
+#about-content {
+	background-image: url(../images/bgabout.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	text-align: center;
+	font-size: 20px;
+	height: 300px;
+	padding-top: 5vh;
+}
+
+#about-text {
+	font-family: 'Amaranth', sans-serif;
+}
+
+
+
+
+
+
+/*secret page*/
+#secret-page {
+	height: 100vh;
+	width: 100%;
+	background-color: #b5b2ca;
+}
+
+#secret-img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 10vh;
+}
 
 
 
@@ -573,8 +668,15 @@ h1 {
 	#gallery-info {
 		font-size: 17px;
 	}
+/*end of gallery*/
 
 
+
+/*secret*/
+	#secret-img {
+		padding-top: 20vh;
+	}
+/*end of secret page*/
 
 }
 
@@ -586,7 +688,7 @@ h1 {
 	}
 
 	#story-header {
-		padding-top: 8vh;
+		padding-top: 9vh;
 		height: 175px;
 	}
 
@@ -610,13 +712,17 @@ h1 {
 		margin-bottom: 5vh;
 	}
 
+	#cat-header {
+		padding-top: 9vh;
+	}
+
 	#cat-img,
 	#dog-img {
 		padding-top: 5vh;
 	}
 
 	#cat-command-title {
-		padding-top: 10vh;
+		padding-top: 9vh;
 	}
 
 	#cat-message {
@@ -637,7 +743,7 @@ h1 {
 
 /*dog page*/
 	#dog-header {
-		padding-top: 10vh;
+		padding-top: 9vh;
 	}
 /*end of dog page*/
 
@@ -659,7 +765,15 @@ h1 {
 	#gallery-sm {
 		margin-bottom: 20px;
 	}
-	
+/*end of gallery*/
+
+
+
+/*secret*/
+	#secret-img {
+		padding-top: 20vh;
+	}
+/*end of secret page*/
 
 
 }

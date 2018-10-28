@@ -58,6 +58,10 @@
 					<li class="nav-item">
 						<a id="hover" class="nav-link" href="gallery.html">Gallery</a>
 					</li>
+
+					<li class="nav-item">
+						<a id="hover" class="nav-link" href="about.html">About</a>
+					</li>
 				</ul>
 			</div> <!-- end navbar items -->
 		</nav> <!-- end of navbar -->
@@ -67,7 +71,7 @@
 
 
 
-<!-- Story (About) Page Content -->
+<!-- Story Page Content -->
 
 	<main class="container-fluid">
 		<header id="story-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
@@ -75,61 +79,98 @@
 		</header> <!-- end of header -->
 
 
-		<section id="story-section">
+		<section class="row">
+			<div class="col-10 col-lg-6 offset-1 offset-lg-3">
+				<p id="story-info" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">This is a short story about a cat who somehow declared a war to an unsuspecting dog. Find out more as you go around and visit their respective 'bases'!</p>
+
+				<p id="story-info" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">By the way, there's a secret page hidden somewhere! I wonder if you can find where it is.</p>
+			</div>
+		</section> <!-- end of opening message -->
+
+
+		<section id="story-faqs" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
+			<h1>FAQs</h1>
+		</section> <!-- end of faqs header -->
+
+
+		<div class="container">
 			<div class="row">
+				<div class="col-12 col-md-6 col-lg-8 offset-md-3 offset-lg-2" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
 
-				<div class="col-4 col-md-4 col-lg-4 offset-lg-1">
-					<img src="assets/images/catb.png" class="img-fluid" data-aos="zoom-out-left" data-aos-delay="1500"data-aos-duration="1000">
-				</div>
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<button role="button" class="btn-block" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										What is the cat and dog's real name?
+									</button>
+								</h4>
+							</div>
 
-				<div class="col-8 col-md-8 col-lg-6">
-					<h2 id="story-title" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">The Cat</h2>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<p id="panel-text">Their real name is Kitty and Doggo, named by their Hooman! The Great Catsby and Bark Obama is just their self-proclaimed cool names.</p>
+								</div>
+							</div>
+						</div> <!-- end panel 1 -->
 
-					<p id="story-info" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">Mischievous. Smart. Tricksters.</p>
-				</div>
-				
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title">
+									<button class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										What's up with the war?
+									</button>
+								</h4>
+							</div>
+
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body">
+									<p id="panel-text">Kitty wants to rule the world. She decided to make Doggo submit to her first, hence declared a war! But it's all just in her head.</p>
+								</div>
+							</div>
+						</div> <!-- end of panel 2 -->
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title">
+									<button class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Where are they?
+									</button>
+								</h4>
+							</div>
+
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body">
+									<p id="panel-text">Notice the same background? They live in the same house! Kitty's lair is just her cat tree and Doggo's house, is litterally his dog house.</p>
+								</div>
+							 </div>
+						</div> <!-- end of pnnel 3 -->
+
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title">
+									<button class="collapsed btn-block" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Is the cat a good or a bad cat?
+									</button>
+								</h4>
+							</div>
+
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body">
+									<p id="panel-text">I'm quite not sure about that, too! But her owner thinks she's a good cat.</p>
+								</div>
+							</div>
+						</div> <!-- end of panel 4 -->
+
+					</div> <!-- end of panel group -->
+
+				 </div> <!-- end of column -->
 			</div> <!-- end of row -->
-		</section> <!-- end of section for cats -->
+		</div> <!-- end of container -->
 
-
-		<section id="story-section">
-			<div class="row">
-
-				<div class="col-8 col-md-8 col-lg-6 offset-lg-1">
-					<h2 id="story-title" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">The Dog</h2>
-
-					<p id="story-info" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Friendly. Energetic. Active</p>
-				</div>
-
-				<div class="col-4 col-md-4 col-lg-4">
-					<img src="assets/images/dogb.png" class="img-fluid" data-aos="zoom-out-right" data-aos-duration="1000">
-				</div>
-
-			</div> <!-- end of row -->
-		</section> <!-- end of section for dogs -->
-
-
-		<section id="story-about-section">
-			<h2 id="story-about-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">The Creator</h2>
-
-			<div id="story-about-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-				<p>Hannah Grace F. Panganiban</p>
-				<p id="story-about-text">+63 916 438 7771</p>
-
-				<span>
-					<a href="https://facebook.com/misayukimura" target="_blank"><img id="social-icon" src="assets/images/fb.png"></a>
-
-					<a href="https://gitlab.com/hpanganiban" target="_blank"><img id="social-icon" src="assets/images/gitlab.png"></a>
-
-					<a href="https://github.com/hpanganiban" target="_blank"><img id="social-icon" src="assets/images/github.png"></a>
-
-					<a href="mailto:panganiban.hannah@gmail.com" target="_top"><img id="social-icon" src="assets/images/gmail.png"></a>
-				</span> 
-			</div> <!-- end of about content -->
-		</section> <!-- end of about section -->
 
 	</main> <!-- end of container -->
-<!-- end of Story (About) Page Content -->
+<!-- end of Story Page Content -->
 
 
 	<footer>
