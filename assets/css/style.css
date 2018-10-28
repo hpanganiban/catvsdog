@@ -177,7 +177,9 @@ h1 {
 	margin-top: 15vh;
 }
 
-
+#story-faqs-container {
+	margin-bottom: 10vh;
+}
 
 #accordion .panel{
 	border: none;
@@ -338,6 +340,18 @@ h1 {
 #cat-modal-body {
 	color: white;
 	font-family: 'Amaranth', sans-serif;
+}
+
+#cat-modal-btn {
+	border: 1px solid red;
+	background-color: black;
+	color: red;
+}
+
+#cat-modal-btn:hover {
+	border: 1px solid black;
+	background-color: red;
+	color: white;
 }
 
 /*end of cat page*/
