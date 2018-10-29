@@ -872,6 +872,20 @@ footer small {
 
 /*Desktop Styles*/
 @media only screen and (min-width: 961px) {
+	#story-header,
+	#cat-header {
+		padding-top: 10vh;
+	}
+
+	#dog-header,
+	#cat-command-title {
+		padding-top: 10vh;
+	}
+
+	#about-title {
+		padding-top: 4vh;
+	}
+
 	#cat-info {
 		font-size: 20px;
 	}
