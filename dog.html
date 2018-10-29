@@ -32,6 +32,9 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- sound on hover -->
+	<script type="text/javascript" src="assets/js/sound-mouseover.js"></script>
+
 </head>
 <body>
 
@@ -96,7 +99,7 @@
 				</div>
 
 				<div id="dog-img" class="col-5 col-md-4 col-lg-4">
-					<img src="assets/images/dogboss.png" class="img-fluid" data-aos="zoom-out-right" data-aos-delay="1500"data-aos-duration="1000" alt="Bark Obama">
+					<a onmouseover="playclip2();"><img src="assets/images/dogboss.png" class="img-fluid" data-aos="zoom-out-right" data-aos-delay="1500"data-aos-duration="1000" alt="Bark Obama"></a>
 				</div>
 				
 			</div> <!-- end of row -->
@@ -111,7 +114,7 @@
 		<section class="row">
 			<div id="dog-friends" class="col-8 col-md-8 col-lg-4 offset-2 offset-lg-2">
 			    <div class="hovereffect">
-			        <img class="img-fluid" src="assets/images/doggo1.png" alt="dog1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="1000" alt="Woofgang Puck">
+			        <a onmouseover="playclip3();"><img class="img-fluid" src="assets/images/doggo1.png" alt="dog1" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="1000" alt="Woofgang Puck"></a>
 
 		            <div id="dog-overflow" class="overlay">
 		                <p id="dog-name">Woofgang Puck</p>
@@ -122,7 +125,7 @@
 
 			<div id="dog-friends" class="col-8 col-md-8 col-lg-4 offset-2 offset-lg-0">
 			    <div class="hovereffect">
-			        <img class="img-fluid" src="assets/images/doggo2.png" alt="dog2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="1000" alt="Luke Skybarker">
+			        <a onmouseover="playclip4();"><img class="img-fluid" src="assets/images/doggo2.png" alt="dog2" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" data-aos-delay="1000" alt="Luke Skybarker"></a>
 
 		            <div id="dog-overflow" class="overlay">
 		                <p id="dog-name">Luke Skybarker</p>
@@ -133,7 +136,7 @@
 
 			<div id="dog-friends-bottom" class="col-10 col-md-10 col-lg-4 offset-1 offset-lg-4">
 			    <div class="hovereffect">
-			        <img class="img-fluid" src="assets/images/doggo3.png" alt="dog3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" alt="Sherlock Bones">
+			        <a onmouseover="playclip5();"><img class="img-fluid" src="assets/images/doggo3.png" alt="dog3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="800" alt="Sherlock Bones"></a>
 
 		            <div id="dog-overflow" class="overlay">
 		                <p id="dog-name">Sherlock Bones</p>
@@ -162,6 +165,28 @@
 	<script>
 		AOS.init();
 	</script>
+
+<audio id="bark">
+<source src="audio-bark.mp3"></source>
+<source src="audio-bark.ogg"></source>
+</audio>
+
+<audio id="howl">
+<source src="audio-howl.mp3"></source>
+<source src="audio-howl.ogg"></source>
+</audio>
+
+<audio id="pup">
+<source src="audio-pup.mp3"></source>
+<source src="audio-pup.ogg"></source>
+</audio>
+
+<audio id="barkonce">
+<source src="audio-barkonce.mp3"></source>
+<source src="audio-barkonce.ogg"></source>
+</audio>
+
+<div id="sounddiv"><bgsound id="sound"></div>
 
 </body>
 </html>

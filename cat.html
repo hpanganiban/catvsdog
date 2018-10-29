@@ -32,6 +32,9 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- sound on hover -->
+	<script type="text/javascript" src="assets/js/sound-mouseover.js"></script>
+
 </head>
 <body>
 
@@ -85,7 +88,7 @@
 			<div class="row">
 
 				<div id="cat-img" class="col-5 col-md-4 col-lg-4 offset-lg-1">
-					<img src="assets/images/catboss.png" class="img-fluid" data-aos="zoom-out-left" data-aos-delay="1500"data-aos-duration="1000" alt="The Great Catsby">
+					<a onmouseover="playclip1();"><img src="assets/images/catboss.png" class="img-fluid" data-aos="zoom-out-left" data-aos-delay="1500"data-aos-duration="1000" alt="The Great Catsby"></a>
 				</div>
 
 				<div class="col-7 col-md-8 col-lg-6">
@@ -205,6 +208,13 @@
 	<script>
 		AOS.init();
 	</script>
+
+<audio id="meow">
+<source src="audio-meow.mp3"></source>
+<source src="audio-meow.ogg"></source>
+</audio>
+
+<div id="sounddiv"><bgsound id="sound"></div>
 
 </body>
 </html>
