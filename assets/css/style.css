@@ -489,6 +489,7 @@ h1 {
 #thumbnail-img {
 	height: 100px;
 	width: 100%;
+	object-fit: cover;
 }
 
 #gallery-row2 {
@@ -730,6 +731,10 @@ footer small {
 		margin-bottom: 10vh;
 	}
 
+	#thumbnail-img {
+	height: 75px;
+	}
+
 	#gallery-sm {
 		margin-bottom: 20px;
 	}
@@ -856,6 +861,12 @@ footer small {
 
 	.thumbnail-sm {
 		margin-bottom: 10vh;
+	}
+
+	#thumbnail-img {
+		margin: 0 auto;
+		height: 100px;
+		width: 75%;
 	}
 
 	#gallery-sm {
