@@ -570,7 +570,7 @@ h1 {
 	text-decoration: none;
 }
 
-#about-footer {
+#about-footer-content {
 	margin: 0;
 }
 
@@ -637,6 +637,16 @@ footer small {
 
 /*Mobile Styles*/
 @media only screen and (max-width: 400px) {
+/*lading page*/
+	#landing-title {
+		text-align: center;
+		width: 175px;
+		margin: 0 auto;
+	}
+/*end of panding page*/
+
+
+
 /*story page*/
 	#story-title {
 		font-size: 20px;
@@ -749,6 +759,17 @@ footer small {
 
 /*Tablet Styles*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+/*lading page*/
+	#landing-title {
+		text-align: center;
+		width: 175px;
+		margin: 0 auto;
+	}
+/*end of panding page*/
+
+
+
+
 /*story page*/
 	#story-title {
 		font-size: 20px;
