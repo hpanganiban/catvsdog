@@ -13,25 +13,6 @@ body {
 	background-position: center;
 }
 
-footer {
-	background-color: #d09850;
-	text-align: center;
-	font-family: 'Amaranth', sans-serif;
-	border-top: 2px dashed #c2b9b5;
-}
-
-footer small {
-	font-family: 'Amaranth', sans-serif;
-}
-
-#index-footer {
-	background-color: #f4e033;
-}
-
-#secret-footer {
-	background-color: #b5b2ca;
-}
-
 h1 {
 	margin: 0;
 	padding: 0;
@@ -588,6 +569,28 @@ h1 {
 	color: black;
 	text-decoration: none;
 }
+
+#about-footer {
+	margin: 0;
+}
+
+#about-disclaimer-title {
+	margin-top: .5rem;
+}
+
+#about-disclaimer {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 13px;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+
+#about-sources {
+	font-family: 'Amaranth', sans-serif;
+	font-size: 13px;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
 /*end of about page*/
 
 
@@ -604,6 +607,31 @@ h1 {
 	margin: 0 auto;
 	padding-top: 10vh;
 }
+/*end of secret page*/
+
+
+
+
+/*footer*/
+footer {
+	background-color: #d09850;
+	text-align: center;
+	font-family: 'Amaranth', sans-serif;
+	border-top: 2px dashed #c2b9b5;
+}
+
+footer small {
+	font-family: 'Amaranth', sans-serif;
+}
+
+#index-footer {
+	background-color: #f4e033;
+}
+
+#secret-footer {
+	background-color: #b5b2ca;
+}
+/*end of footer*/
 
 
 
