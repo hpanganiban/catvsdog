@@ -514,6 +514,10 @@ h1 {
 	animation-delay: 1s;
 }
 
+#gallery-overflow {
+	overflow: auto;
+}
+
 /*end of gallery page*/
 
 
