@@ -8,11 +8,11 @@
 
 	<title> Cat vs Dog </title>
 
-	<!-- bootstrap css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-	<!-- external css -->
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- jquery first then popper then bootstrap js -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 	<!-- animate css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
@@ -28,6 +28,9 @@
 
 	<!-- aos -->
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 <body>
@@ -73,7 +76,7 @@
 
 <!-- Landing Page Content -->
 	<header id="title">
-		<h1 data-aos="zoom-in-down" data-aos-mirror="true" data-aos-duration="1000">
+		<h1 id="landing-title" data-aos="zoom-in-down" data-aos-mirror="true" data-aos-duration="1000">
 			<span id="cat-title">Cat</span>
 			<span id="vs"> vs </span>
 			<span id="dog-title">Dog</span>
@@ -113,19 +116,6 @@
 
 
 
-
-
-
-<!-- jquery first then popper then bootstrap js -->
-
-<!-- jquery -->
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-
-<!-- popper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-<!-- external js -->
-<script src="assets/js/bootstrap.min.js"></script>
 
 <!-- aos script -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
