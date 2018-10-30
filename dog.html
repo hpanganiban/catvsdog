@@ -146,6 +146,37 @@
 			</div> <!-- end of dog friends -->
 		</section> <!-- end of row -->
 
+		<section>
+			<p id="dog-suspicious">Pssst. I need to ask you something! You smell.. diffirent..</p>
+
+			<p id="dog-suspicious">Did you somehow.. met the cat?</p>
+
+			
+			<div class="row">
+				<div class="col-12 col-md-4 col-lg-4">
+					<button onclick="no()" id="dogno" class="btn btn-block" type="button">No.. Do I smell bad?</button>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-4">
+					<button onclick="reveal()" id="dogreveal" class="btn btn-block" type="button">I need to tell you something!</button>
+				</div>
+
+				<div class="col-12 col-md-4 col-lg-4">
+					<button onclick="hide()" id="doghide" class="btn btn-block" type="button">err.. No ?</button>
+				</div>
+			</div>
+
+
+			<div id="no"><p id="dog-suspicious">no</p></div>
+
+			<div id="reveal"><p id="dog-suspicious">reveal</p></div>
+
+			<div id="hide"><p id="dog-suspicious">hide</p></div>
+
+
+
+		</section>
+
 	</main>
 <!-- end of Dog Page Content -->
 
@@ -155,6 +186,99 @@
 		<small>Hannah Panganiban | Cat vs Dog &copy; 2018</small>
 	</footer>
 
+
+
+
+
+
+<!-- option script -->
+<script>
+	function no() {
+
+     $('#dogreveal').attr('disabled','disabled');
+     $('#doghide').attr('disabled','disabled');
+    // get the clock
+    var no = document.getElementById('no');
+
+    // get the current value of the clock's display property
+    var displaySetting = no.style.display;
+
+    // also get the clock button, so we can change what it says
+    var dogno = document.getElementById('dogno');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      no.style.display = 'none';
+      // change button text
+      dogno.innerHTML = 'No.. Do I smell bad?';
+    }
+    else {
+      // clock is hidden. show it
+      no.style.display = 'block';
+      // change button text
+      dogno.innerHTML = 'Hide';
+    }
+  }
+
+
+	function reveal() {
+
+     $('#dogno').attr('disabled','disabled');
+     $('#doghide').attr('disabled','disabled');
+    // get the clock
+    var reveal = document.getElementById('reveal');
+
+    // get the current value of the clock's display property
+    var displaySetting = reveal.style.display;
+
+    // also get the clock button, so we can change what it says
+    var dogreveal = document.getElementById('dogreveal');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      reveal.style.display = 'none';
+      // change button text
+      dogreveal.innerHTML = 'I need to tell you something!';
+    }
+    else {
+      // clock is hidden. show it
+      reveal.style.display = 'block';
+      // change button text
+      dogreveal.innerHTML = 'Hide';
+    }
+  }
+
+
+  function hide() {
+
+     $('#dogno').attr('disabled','disabled');
+     $('#dogreveal').attr('disabled','disabled');
+    // get the clock
+    var hide = document.getElementById('hide');
+
+    // get the current value of the clock's display property
+    var displaySetting = hide.style.display;
+
+    // also get the clock button, so we can change what it says
+    var doghide = document.getElementById('doghide');
+
+    // now toggle the clock and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // clock is visible. hide it
+      hide.style.display = 'none';
+      // change button text
+      doghide.innerHTML = 'err.. No?';
+    }
+    else {
+      // clock is hidden. show it
+      hide.style.display = 'block';
+      // change button text
+      doghide.innerHTML = 'Hide';
+    }
+  }
+</script>
 
 
 

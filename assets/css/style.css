@@ -248,12 +248,6 @@ h1 {
 
 
 
-
-
-
-
-
-
 #cat-command-title {
 	background-image: url(../images/titlebg2.png);
 	background-repeat: no-repeat;
@@ -470,6 +464,28 @@ h1 {
 #dog-secret {
 	text-decoration: none;
 	color: black;
+}
+
+#dog-suspicious {
+	color: white;
+	text-align: center;
+	font-family: 'Amaranth', sans-serif;
+	padding: 10px;
+	background-color: rgb(0,0,0,0.5);
+}
+
+#dogno,
+#dogreveal,
+#doghide {
+	background-color: #d09850;
+	border: 5px solid #c2b9b5;
+	margin-bottom: 10vh;
+}
+
+#no,
+#reveal,
+#hide {
+	display: none;
 }
 
 /*end of dog page*/
