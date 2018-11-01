@@ -32,45 +32,29 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- sound on hover -->
-	<script type="text/javascript" src="assets/js/sound-mouseover.js"></script>
+	<!-- external js -->
+	<script type="text/javascript" src="assets/js/external.js"></script>
 
 </head>
 <body>
 
 <!-- Logo and Navigation -->
 	<div class="fixed-top">
-		<a href="index.html"><img id="logo" class="float-left pt-3 ml-3" src="assets/images/logo.png" alt="logo"></a>
+		<a href="index.html"><img id="logo" class="float-left pt-2 ml-2" src="assets/images/logo.png" alt="logo"></a>
 
-		<nav class="float-right navbar-light pt-3 mr-3">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
 
-			<div id="navbar-nav" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="story.html">Story</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="cat.html">Cat</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="active" class="nav-link" href="dog.html">Dog</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="gallery.html">Gallery</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="about.html">About</a>
-					</li>
+		<nav id="hamburger" class="float-right">
+			<a href="#menu" id="toggle" ><span></span></a>
+			<div id="menu">
+				<ul>
+					<li><a id="hover" class="nav-link" href="story.html">Story</a></li>
+					<li><a id="hover" class="nav-link" href="cat.html">Cat</a></li>
+					<li><a id="active" class="nav-link" href="dog.html">Dog</a></li>
+					<li><a id="hover" class="nav-link" href="gallery.html">Gallery</a></li>
+					<li><a id="hover" class="nav-link" href="about.html">About</a></li>
 				</ul>
-			</div> <!-- end navbar items -->
-		</nav> <!-- end of navbar -->
+			</div>
+		</nav>
 	</div>
 
 <!-- end of Logo and Navigation -->
@@ -91,10 +75,10 @@
 				<div class="col-7 col-md-8 col-lg-6 offset-lg-1">
 					<h2 id="story-title" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">Bark Obama</h2>
 
-					<div id="cat-message" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">
-						<p id="cat-info">Oh! A new friend! Nice to meet you, I'm Bark. I'm glad you choosed to join me!</p>
+					<div id="dog-message" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">
+						<p id="dog-info">Oh! A new friend! Nice to meet you, I'm Bark. I'm glad you choosed to join me!</p>
 
-						<p id="cat-info">I've heard that the Cat have sent a spy on us. I want to check up on it ASAP so I'm sorry I can't play with you. In the mean time, you can scroll down and meet other friends.</p>
+						<p id="dog-info">I've heard that the Cat have sent a spy on us. I want to check up on it ASAP so I'm sorry I can't play with you. In the mean time, you can scroll down and meet other friends.</p>
 					</div>
 				</div>
 
@@ -106,7 +90,7 @@
 		</section> <!-- end of section for dog -->
 
 
-		<section id="dog-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+		<section id="dog-meet" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
 			<h1>Meet them!</h1>
 		</section> <!-- end of meet them -->
 
@@ -154,15 +138,15 @@
 			
 			<div class="row">
 				<div class="col-12 col-md-4 col-lg-4">
-					<button onclick="no()" id="dogno" class="btn btn-block" type="button">No.. Do I smell bad?</button>
+					<a href="#no"><button onclick="no()" id="dogno" class="btn btn-block" type="button">No.. Do I smell bad?</button></a>
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-4">
-					<button onclick="reveal()" id="dogreveal" class="btn btn-block" type="button">I need to tell you something!</button>
+					<a href="#reveal"><button onclick="reveal()" id="dogreveal" class="btn btn-block" type="button">I need to tell you something!</button></a>
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-4">
-					<button onclick="hide()" id="doghide" class="btn btn-block" type="button">err.. No ?</button>
+					<a href="#hide"><button onclick="hide()" id="doghide" class="btn btn-block" type="button">err.. No ?</button></a>
 				</div>
 			</div>
 
@@ -191,98 +175,6 @@
 
 
 
-<!-- option script -->
-<script>
-	function no() {
-
-     $('#dogreveal').attr('disabled','disabled');
-     $('#doghide').attr('disabled','disabled');
-    // get the clock
-    var no = document.getElementById('no');
-
-    // get the current value of the clock's display property
-    var displaySetting = no.style.display;
-
-    // also get the clock button, so we can change what it says
-    var dogno = document.getElementById('dogno');
-
-    // now toggle the clock and the button text, depending on current state
-    if (displaySetting == 'block') {
-      // clock is visible. hide it
-      no.style.display = 'none';
-      // change button text
-      dogno.innerHTML = 'No.. Do I smell bad?';
-    }
-    else {
-      // clock is hidden. show it
-      no.style.display = 'block';
-      // change button text
-      dogno.innerHTML = 'Hide';
-    }
-  }
-
-
-	function reveal() {
-
-     $('#dogno').attr('disabled','disabled');
-     $('#doghide').attr('disabled','disabled');
-    // get the clock
-    var reveal = document.getElementById('reveal');
-
-    // get the current value of the clock's display property
-    var displaySetting = reveal.style.display;
-
-    // also get the clock button, so we can change what it says
-    var dogreveal = document.getElementById('dogreveal');
-
-    // now toggle the clock and the button text, depending on current state
-    if (displaySetting == 'block') {
-      // clock is visible. hide it
-      reveal.style.display = 'none';
-      // change button text
-      dogreveal.innerHTML = 'I need to tell you something!';
-    }
-    else {
-      // clock is hidden. show it
-      reveal.style.display = 'block';
-      // change button text
-      dogreveal.innerHTML = 'Hide';
-    }
-  }
-
-
-  function hide() {
-
-     $('#dogno').attr('disabled','disabled');
-     $('#dogreveal').attr('disabled','disabled');
-    // get the clock
-    var hide = document.getElementById('hide');
-
-    // get the current value of the clock's display property
-    var displaySetting = hide.style.display;
-
-    // also get the clock button, so we can change what it says
-    var doghide = document.getElementById('doghide');
-
-    // now toggle the clock and the button text, depending on current state
-    if (displaySetting == 'block') {
-      // clock is visible. hide it
-      hide.style.display = 'none';
-      // change button text
-      doghide.innerHTML = 'err.. No?';
-    }
-    else {
-      // clock is hidden. show it
-      hide.style.display = 'block';
-      // change button text
-      doghide.innerHTML = 'Hide';
-    }
-  }
-</script>
-
-
-
-
 
 <!-- aos script -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -290,6 +182,8 @@
 		AOS.init();
 	</script>
 
+
+<!-- audios -->
 <audio id="bark">
 <source src="audio-bark.mp3"></source>
 <source src="audio-bark.ogg"></source>
@@ -311,6 +205,51 @@
 </audio>
 
 <div id="sounddiv"><bgsound id="sound"></div>
+
+
+
+<!-- navigation script -->
+<script>
+	var theToggle = document.getElementById('toggle');
+
+	function hasClass(elem, className) {
+		return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+	}
+
+	function addClass(elem, className) {
+	    if (!hasClass(elem, className)) {
+	    	elem.className += ' ' + className;
+	    }
+	}
+
+	function removeClass(elem, className) {
+		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+		if (hasClass(elem, className)) {
+	        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+	            newClass = newClass.replace(' ' + className + ' ', ' ');
+	        }
+	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+	    }
+	}
+
+	function toggleClass(elem, className) {
+		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+	    if (hasClass(elem, className)) {
+	        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+	            newClass = newClass.replace( " " + className + " " , " " );
+	        }
+	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+	    } else {
+	        elem.className += ' ' + className;
+	    }
+	}
+
+	theToggle.onclick = function() {
+	   toggleClass(this, 'on');
+	   return false;
+	}
+</script>
+
 
 </body>
 </html>

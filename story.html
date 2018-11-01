@@ -32,6 +32,9 @@
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<!-- external js -->
+	<script type="text/javascript" src="assets/js/external.js"></script>
+
 </head>
 <body>
 
@@ -39,35 +42,18 @@
 	<div class="fixed-top">
 		<a href="index.html"><img id="logo" class="float-left pt-3 ml-3" src="assets/images/logo.png" alt="logo"></a>
 
-		<nav class="float-right navbar-light pt-3 mr-3">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navbar-nav" class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a id="active" class="nav-link" href="story.html">Story</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="cat.html">Cat</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="dog.html">Dog</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="gallery.html">Gallery</a>
-					</li>
-
-					<li class="nav-item">
-						<a id="hover" class="nav-link" href="about.html">About</a>
-					</li>
+		<nav id="hamburger" class="float-right">
+			<a href="#menu" id="toggle" ><span></span></a>
+			<div id="menu">
+				<ul>
+					<li><a id="hover" class="nav-link" href="story.html">Story</a></li>
+					<li><a id="hover" class="nav-link" href="cat.html">Cat</a></li>
+					<li><a id="active" class="nav-link" href="dog.html">Dog</a></li>
+					<li><a id="hover" class="nav-link" href="gallery.html">Gallery</a></li>
+					<li><a id="hover" class="nav-link" href="about.html">About</a></li>
 				</ul>
-			</div> <!-- end navbar items -->
-		</nav> <!-- end of navbar -->
+			</div>
+		</nav>
 	</div>
 
 <!-- end of Logo and Navigation -->
@@ -188,5 +174,48 @@
 		AOS.init();
 	</script>
 
+
+
+<!-- navigation script -->
+<script>
+	var theToggle = document.getElementById('toggle');
+
+	function hasClass(elem, className) {
+		return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+	}
+
+	function addClass(elem, className) {
+	    if (!hasClass(elem, className)) {
+	    	elem.className += ' ' + className;
+	    }
+	}
+
+	function removeClass(elem, className) {
+		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+		if (hasClass(elem, className)) {
+	        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+	            newClass = newClass.replace(' ' + className + ' ', ' ');
+	        }
+	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+	    }
+	}
+
+	function toggleClass(elem, className) {
+		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+	    if (hasClass(elem, className)) {
+	        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+	            newClass = newClass.replace( " " + className + " " , " " );
+	        }
+	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+	    } else {
+	        elem.className += ' ' + className;
+	    }
+	}
+
+	theToggle.onclick = function() {
+	   toggleClass(this, 'on');
+	   return false;
+	}
+</script>
 </body>
 </html>
