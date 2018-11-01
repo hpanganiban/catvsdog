@@ -71,7 +71,6 @@ h1 {
   border-radius: 2px;
 }
 
-/* on activation */
 #toggle.on span {
   background-color: transparent;
 }
@@ -88,21 +87,15 @@ h1 {
   visibility: visible;
 }
 
-/* menu appearance*/
 #menu {
 	top: 30px;
 	right: 5px;
 	  position: relative;
-  color: #999;
-  /*width: 200px;
-*/  padding: 5px;
-  /*margin: auto;*/
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+ padding: 5px;
   text-align: center;
   border-radius: 4px;
-  background: white;
+  background: rgba(194,185,181,0.8);
   box-shadow: 0 1px 8px rgba(0,0,0,0.05);
-  /* just for this demo */
   opacity: 0;
   visibility: hidden;
   transition: opacity .4s;
@@ -115,7 +108,7 @@ h1 {
   display: block;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 20px solid white;
+  border-bottom: 15px solid rgba(194,185,181,0.8);
 }
 ul, li, li a {
   list-style: none;
@@ -124,15 +117,21 @@ ul, li, li a {
   padding: 0;
 }
 li a {
-  padding: 5px;
-  color: #888;
+  color: white;
   text-decoration: none;
   transition: all .2s;
 }
 li a:hover,
 li a:focus {
-  background: #1ABC9C;
-  color: #fff;
+  background: #d09850;
+  color: black;
+  border-radius: 5px;
+}
+
+#active {
+	background: #d09850;
+	color: black;
+	border-radius: 5px;
 }
 
 /*end of navigation*/
@@ -580,12 +579,10 @@ li a:focus {
 	background-color: rgb(0,0,0,0.5);
 }
 
-#dogno,
-#dogreveal,
-#doghide {
+.dog-option {
 	background-color: #d09850;
 	border: 5px solid #c2b9b5;
-	margin-bottom: 10vh;
+	margin-bottom: 1rem;
 }
 
 #no,
@@ -787,6 +784,14 @@ footer small {
 
 /*Mobile Styles*/
 @media only screen and (max-width: 400px) {
+/*navigation*/
+	#logo {
+		height: 50px;
+	}
+/*end of navigation*/
+
+
+
 /*lading page*/
 	#landing-title {
 		text-align: center;
@@ -919,6 +924,15 @@ footer small {
 
 /*Tablet Styles*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+/*navigation*/
+	#logo {
+		height: 50px;
+	}
+/*end of navigation*/
+
+
+
+
 /*lading page*/
 	#landing-title {
 		text-align: center;

@@ -47,11 +47,11 @@
 			<a href="#menu" id="toggle" ><span></span></a>
 			<div id="menu">
 				<ul>
-					<li><a id="hover" class="nav-link" href="story.html">Story</a></li>
-					<li><a id="hover" class="nav-link" href="cat.html">Cat</a></li>
+					<li><a class="nav-link" href="story.html">Story</a></li>
+					<li><a class="nav-link" href="cat.html">Cat</a></li>
 					<li><a id="active" class="nav-link" href="dog.html">Dog</a></li>
-					<li><a id="hover" class="nav-link" href="gallery.html">Gallery</a></li>
-					<li><a id="hover" class="nav-link" href="about.html">About</a></li>
+					<li><a class="nav-link" href="gallery.html">Gallery</a></li>
+					<li><a class="nav-link" href="about.html">About</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -130,43 +130,58 @@
 			</div> <!-- end of dog friends -->
 		</section> <!-- end of row -->
 
+
+		<!-- Interview -->
 		<section>
-			<p id="dog-suspicious">Pssst. I need to ask you something! You smell.. diffirent..</p>
+			<div class="row">
+				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Pssst. I need to ask you something! You smell.. diffirent..</p>
 
-			<p id="dog-suspicious">Did you somehow.. met the cat?</p>
-
+				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Did you somehow.. met the cat?</p>
+			</div> <!-- end of row -->
 			
 			<div class="row">
-				<div class="col-12 col-md-4 col-lg-4">
-					<a href="#no"><button onclick="no()" id="dogno" class="btn btn-block" type="button">No.. Do I smell bad?</button></a>
-				</div>
+				<div class="col-10 offset-1">
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-4">
+							<a href="#no"><button onclick="no()" id="dogno" class="btn btn-block dog-option" type="button">No.. Do I smell bad?</button></a>
+						</div>
 
-				<div class="col-12 col-md-4 col-lg-4">
-					<a href="#reveal"><button onclick="reveal()" id="dogreveal" class="btn btn-block" type="button">I need to tell you something!</button></a>
-				</div>
+						<div class="col-12 col-md-4 col-lg-4">
+							<a href="#reveal"><button onclick="reveal()" id="dogreveal" class="btn btn-block dog-option" type="button">I need to tell you something!</button></a>
+						</div>
 
-				<div class="col-12 col-md-4 col-lg-4">
-					<a href="#hide"><button onclick="hide()" id="doghide" class="btn btn-block" type="button">err.. No ?</button></a>
-				</div>
-			</div>
-
-
-			<div id="no"><p id="dog-suspicious">no</p></div>
-
-			<div id="reveal"><p id="dog-suspicious">reveal</p></div>
-
-			<div id="hide"><p id="dog-suspicious">hide</p></div>
+						<div class="col-12 col-md-4 col-lg-4">
+							<a href="#hide"><button onclick="hide()" id="doghide" class="btn btn-block dog-option" type="button">err.. No ?</button></a>
+						</div>
+					</div> <!-- end of row -->
+				</div> <!-- end of col // for equal left and right spacing -->
+			</div> <!-- end of question #1 -->
 
 
+
+
+			<!-- answers -->
+			<section class="row">
+				<div class="col-10 offset-1">
+					<div id="no"><p id="dog-suspicious">no</p></div>
+
+					<div id="reveal"><p id="dog-suspicious">reveal</p></div>
+
+					<div id="hide"><p id="dog-suspicious">hide</p></div>
+				</div> <!-- end of answer #1 -->
+			</section> <!-- end of answers -->
 
 		</section>
+		<!-- end of interview -->
+
+
 
 	</main>
 <!-- end of Dog Page Content -->
 
 
 
-	<footer>
+	<footer class="mt-5">
 		<small>Hannah Panganiban | Cat vs Dog &copy; 2018</small>
 	</footer>
 
