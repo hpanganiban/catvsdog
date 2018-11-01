@@ -90,38 +90,87 @@ function playclip5() {
 }
 
 
+
 /*no*/
 function no() {
-  var no = document.getElementById('no');
-  var displaySetting = no.style.display;
+  $('#dogno').attr('disabled','disabled');
+  var nodialogue = document.getElementById('nodialogue');
+  var displaySetting = nodialogue.style.display;
   var dogno = document.getElementById('dogno');
 
   if (displaySetting == 'block') {
-    no.style.display = 'none';
+    nodialogue.style.display = 'none';
     dogno.innerHTML = 'No.. Do I smell bad?';
     }
 
   else {
-    no.style.display = 'block';
+    nodialogue.style.display = 'block';
     }
   }
 
+  function yes() {
+  var noyesdialogue = document.getElementById('noyesdialogue');
+  var displaySetting = noyesdialogue.style.display;
+  var dogyes = document.getElementById('dogyes');
+
+  if (displaySetting == 'block') {
+    noyesdialogue.style.display = 'none';
+    dogyes.innerHTML = 'Yes';
+    }
+
+  else {
+    noyesdialogue.style.display = 'block';
+    }
+  }
+
+  function no2() {
+  var nonodialogue = document.getElementById('nonodialogue');
+  var displaySetting = nonodialogue.style.display;
+  var dogno2 = document.getElementById('dogno2');
+
+  if (displaySetting == 'block') {
+    nonodialogue.style.display = 'none';
+    dogno2.innerHTML = 'No';
+    }
+
+  else {
+    nonodialogue.style.display = 'block';
+    }
+  }
 
   /*reveal*/
 function reveal() {
-  var reveal = document.getElementById('reveal');
-  var displaySetting = reveal.style.display;
+  $('#dogreveal').attr('disabled','disabled');
+  var revealdialogue = document.getElementById('revealdialogue');
+  var displaySetting = revealdialogue.style.display;
   var dogreveal = document.getElementById('dogreveal');
 
   if (displaySetting == 'block') {
-    reveal.style.display = 'none';
+    revealdialogue.style.display = 'none';
     dogreveal.innerHTML = 'I need to tell you something!';
     }
 
 else {
-    reveal.style.display = 'block';
+    revealdialogue.style.display = 'block';
     }
   }
+
+  function tell() {
+    $('#dogtell').attr('disabled','disabled');
+  var revealtelldialogue = document.getElementById('revealtelldialogue');
+  var displaySetting = revealtelldialogue.style.display;
+  var dogtell = document.getElementById('dogtell');
+
+  if (displaySetting == 'block') {
+    revealtelldialogue.style.display = 'none';
+    dogtell.innerHTML = 'I need to tell you something!';
+    }
+
+else {
+    revealtelldialogue.style.display = 'block';
+    }
+  }
+
 
 
   /*hide*/
@@ -147,6 +196,20 @@ $(document).ready(function(){
   $("#dogno").click(function () {
     $("#dogreveal").hide()
     $("#doghide").hide()
+    $("#dogyes").show()
+    $("#dogno2").show()
+    });
+});
+
+$(document).ready(function(){
+  $("#dogyes").click(function () {
+    $("#dogno2").hide()
+    });
+});
+
+$(document).ready(function(){
+  $("#dogno2").click(function () {
+    $("#dogyes").hide()
     });
 });
 
@@ -154,6 +217,14 @@ $(document).ready(function(){
   $("#dogreveal").click(function () {
     $("#dogno").hide()
     $("#doghide").hide()
+    $("#dogtell").show()
+    });
+});
+
+$(document).ready(function(){
+  $("#dogtell").click(function () {
+    $("#dogrun").show()
+    $("#dogstay").show()
     });
 });
 

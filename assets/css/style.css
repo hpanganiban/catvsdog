@@ -20,6 +20,10 @@ h1 {
 
 
 /*navigation*/
+#navigation {
+	height: 1px;
+}
+
 #logo {
 	height: 60px;
 }
@@ -585,10 +589,21 @@ li a:focus {
 	margin-bottom: 1rem;
 }
 
-#no,
-#reveal,
-#hide {
-	display: none;
+#nodialogue,
+#noyesdialogue,
+#nonodialogue,
+
+#revealdialogue,
+#revealtelldialogue,
+
+#hide,
+
+#dogyes,
+#dogno2,
+#dogtell,
+#dogrun,
+#dogstay{
+  display: none;
 }
 
 a:hover {

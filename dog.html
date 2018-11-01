@@ -39,7 +39,7 @@
 <body>
 
 <!-- Logo and Navigation -->
-	<div class="fixed-top">
+	<div id="navigation" class="fixed-top">
 		<a href="index.html"><img id="logo" class="float-left pt-2 ml-2" src="assets/images/logo.png" alt="logo"></a>
 
 
@@ -90,6 +90,117 @@
 		</section> <!-- end of section for dog -->
 
 
+
+
+
+		<!-- Interview -->
+    	<section>
+    		<div class="row">
+				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Pssst. I need to ask you something! You smell.. diffirent..</p>
+
+				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Did you somehow.. met the cat?</p>
+			</div> <!-- end of opening message -->
+
+		    <!-- buttons layer 1 -->  
+			<div class="row">
+		        <div class="col-10 offset-1">
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-4">
+							<button onclick="no()" id="dogno" class="btn btn-block dog-option" type="button">No.. Do I smell bad?</button>
+						</div>
+
+						<div class="col-12 col-md-4 col-lg-4">
+							<button onclick="reveal()" id="dogreveal" class="btn btn-block dog-option" type="button">I need to tell you something!</button>
+						</div>
+
+						<div class="col-12 col-md-4 col-lg-4">
+							<button onclick="hide()" id="doghide" class="btn btn-block dog-option" type="button">err.. No ?</button>
+						</div>
+					</div> <!-- end of row -->
+		        </div> <!-- end of col // for equal left and right spacing -->
+			</div> <!-- end of buttons layer 1 -->
+
+
+			<!-- dialogue layer 1 -->
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div id="nodialogue"><p id="dog-suspicious">Ye-- I mean no! You smell good. Do you wear perfume?</p></div>
+
+					<div id="revealdialogue"><p id="dog-suspicious">What is it? Tell me!</p></div>
+
+					<div id="hide"><p id="dog-suspicious">hide</p></div>
+				</div>
+			</div> <!-- end of dialogue layer 1 -->
+
+
+			<!-- buttons layer 2 -->
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div class="row">
+						<div class="col-6 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
+							<button onclick="yes()" id="dogyes" class="btn btn-block dog-option" type="button">Yes</button>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-4">
+							<button onclick="no2()" id="dogno2" class="btn btn-block dog-option" type="button">No</button>
+						</div>
+
+						<div class="col-12 col-md-4 col-lg-4 offset-md-4 offset-lg-4">
+							<button onclick="tell()" id="dogtell" class="btn btn-block dog-option" type="button">The cat has sent me to spy on you but..</button>
+						</div>
+					</div>
+				</div> <!-- end of col // for equal left and right spacing -->
+			</div> <!-- end of buttons layer 2 -->
+
+
+			<!-- dialogue layer 2 -->
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div id="noyesdialogue">
+						<p id="dog-suspicious">I see! So that's the smell I'm smelling! You should change your perfume! I recommend bacon!</p>
+
+						<p id="dog-suspicious">By the way, I want you to meet my friends! Scroll down to take a look at them.</p>
+					</div>
+
+					<div id="nonodialogue">
+						<p id="dog-suspicious">Oh.. You see, we'll be having a pool party later. You should join!</p>
+
+						<p id="dog-suspicious">My friends will be coming! Scroll down to take a look at them.</p>
+					</div>
+
+					<div id="revealtelldialogue">
+						<p id="dog-suspicious">What?! So you are a spy! You better start running or I'll bite you!</p>
+					</div>
+				</div>
+			</div> <!-- end of dialogue layer 2 -->
+
+
+			<!-- buttons layer 3 -->
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div class="row">
+						<div class="col-12 col-md-4 col-lg-4 offset-md-4 offset-lg-4">
+							<button onclick="tell()" id="dogtell" class="btn btn-block dog-option" type="button">The cat has sent me to spy on you but..</button>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
+							<button id="dogrun" class="btn btn-block dog-option" type="button">No! Waaaaah-- *runs*</button>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-4">
+							<button id="dogstay" class="btn btn-block dog-option" type="button">Wait! I want to join you!</button>
+						</div>
+					</div> <!-- end of row -->
+				</div> <!-- end of col // for equal left and right spacing -->
+			</div> <!-- end of 2ns layer button -->
+		</section>
+    	<!-- end of interview -->
+
+
+
+
+
+
 		<section id="dog-meet" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
 			<h1>Meet them!</h1>
 		</section> <!-- end of meet them -->
@@ -129,50 +240,6 @@
 			    </div>
 			</div> <!-- end of dog friends -->
 		</section> <!-- end of row -->
-
-
-		<!-- Interview -->
-		<section>
-			<div class="row">
-				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Pssst. I need to ask you something! You smell.. diffirent..</p>
-
-				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Did you somehow.. met the cat?</p>
-			</div> <!-- end of row -->
-			
-			<div class="row">
-				<div class="col-10 offset-1">
-					<div class="row">
-						<div class="col-12 col-md-4 col-lg-4">
-							<a href="#no"><button onclick="no()" id="dogno" class="btn btn-block dog-option" type="button">No.. Do I smell bad?</button></a>
-						</div>
-
-						<div class="col-12 col-md-4 col-lg-4">
-							<a href="#reveal"><button onclick="reveal()" id="dogreveal" class="btn btn-block dog-option" type="button">I need to tell you something!</button></a>
-						</div>
-
-						<div class="col-12 col-md-4 col-lg-4">
-							<a href="#hide"><button onclick="hide()" id="doghide" class="btn btn-block dog-option" type="button">err.. No ?</button></a>
-						</div>
-					</div> <!-- end of row -->
-				</div> <!-- end of col // for equal left and right spacing -->
-			</div> <!-- end of question #1 -->
-
-
-
-
-			<!-- answers -->
-			<section class="row">
-				<div class="col-10 offset-1">
-					<div id="no"><p id="dog-suspicious">no</p></div>
-
-					<div id="reveal"><p id="dog-suspicious">reveal</p></div>
-
-					<div id="hide"><p id="dog-suspicious">hide</p></div>
-				</div> <!-- end of answer #1 -->
-			</section> <!-- end of answers -->
-
-		</section>
-		<!-- end of interview -->
 
 
 
