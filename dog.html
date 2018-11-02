@@ -35,6 +35,9 @@
 	<!-- external js -->
 	<script type="text/javascript" src="assets/js/external.js"></script>
 
+	<!-- dog js -->
+	<script type="text/javascript" src="assets/js/dog.js"></script>
+
 </head>
 <body>
 
@@ -56,21 +59,17 @@
 			</div>
 		</nav>
 	</div>
-
 <!-- end of Logo and Navigation -->
-
-
 
 <!-- Dog Page Content -->
 
 	<main class="container-fluid">
-		<header id="story-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-			<h1>Dog House</h1>
-		</header> <!-- end of header -->
+		<section id="dog-top">
+			<header id="story-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+				<h1>Dog House</h1>
+			</header> <!-- end of header -->
 
-
-		<section id="story-section">
-			<div class="row">
+			<div id="dog-section" class="row">
 
 				<div class="col-7 col-md-8 col-lg-6 offset-lg-1">
 					<h2 id="story-title" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">Bark Obama</h2>
@@ -78,7 +77,7 @@
 					<div id="dog-message" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">
 						<p id="dog-info">Oh! A new friend! Nice to meet you, I'm Bark. I'm glad you choosed to join me!</p>
 
-						<p id="dog-info">I've heard that the Cat have sent a spy on us. I want to check up on it ASAP so I'm sorry I can't play with you. In the mean time, you can scroll down and meet other friends.</p>
+						<p id="dog-info">It seems like someone wants to talk to you. Scroll down to see who it is.</p>
 					</div>
 				</div>
 
@@ -87,18 +86,27 @@
 				</div>
 				
 			</div> <!-- end of row -->
+
+			<!-- arrow -->
+			<div class="arrow animated infinite bounce delay-2s">
+				<a href="#dog-interview"><img class="img-fluid" src="assets/images/arrow.png" alt="arrow"></a>
+			</div>
 		</section> <!-- end of section for dog -->
 
 
 
-
-
 		<!-- Interview -->
-    	<section>
+    	<section id="dog-interview">
     		<div class="row">
-				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Pssst. I need to ask you something! You smell.. diffirent..</p>
-
-				<p id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">Did you somehow.. met the cat?</p>
+				<div id="dog-suspicious" class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3 mt-5">
+					<div class="media">
+						<img id="dogdlg-img" src="assets/images/dogdlg1.gif" class="img-fluid">
+						<div class="media-body">
+							<p id="dogdlg-body" class="pl-3 pt-4">Hey it's me! I need to ask you something. You smell.. diffirent.</p>
+							<p id="dogdlg-body" class="pl-3">Did you somehow.. met the cat?</p>
+						</div>
+					</div>
+				</div>
 			</div> <!-- end of opening message -->
 
 		    <!-- buttons layer 1 -->  
@@ -123,8 +131,17 @@
 
 			<!-- dialogue layer 1 -->
 			<div class="row">
-				<div class="col-10 offset-1">
-					<div id="nodialogue"><p id="dog-suspicious">Ye-- I mean no! You smell good. Do you wear perfume?</p></div>
+				<div class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">
+					<div id="nodialogue">
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg3.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">Ye-- I mean no! You smell good. Do you wear perfume?</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div id="revealdialogue"><p id="dog-suspicious">What is it? Tell me!</p></div>
 
@@ -155,17 +172,27 @@
 
 			<!-- dialogue layer 2 -->
 			<div class="row">
-				<div class="col-10 offset-1">
+				<div class="col-10 col-md-6 col-lg-6 offset-1 offset-md-3 offset-lg-3">
 					<div id="noyesdialogue">
-						<p id="dog-suspicious">I see! So that's the smell I'm smelling! You should change your perfume! I recommend bacon!</p>
-
-						<p id="dog-suspicious">By the way, I want you to meet my friends! Scroll down to take a look at them.</p>
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg5.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">I see! So that's the smell I'm smelling! You should change your perfume! I recommend donut! By the way, I want you to meet my friends! Scroll down to take a look at them.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div id="nonodialogue">
-						<p id="dog-suspicious">Oh.. You see, we'll be having a pool party later. You should join!</p>
-
-						<p id="dog-suspicious">My friends will be coming! Scroll down to take a look at them.</p>
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg4.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">Oh.. You see, we'll be having a pool party later. You should join! My friends will be coming too! Scroll down to take a look at them.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
 					<div id="revealtelldialogue">
@@ -184,21 +211,25 @@
 						</div>
 
 						<div class="col-6 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
-							<button id="dogrun" class="btn btn-block dog-option" type="button">No! Waaaaah-- *runs*</button>
+							<a href="run.html"><button id="dogrun" class="btn btn-block dog-option" type="button">No! Waaaaah-- *runs*</button></a>
 						</div>
 
 						<div class="col-6 col-md-4 col-lg-4">
-							<button id="dogstay" class="btn btn-block dog-option" type="button">Wait! I want to join you!</button>
+							<a href="stay.html"><button id="dogstay" class="btn btn-block dog-option" type="button">Wait! I want to join you!</button></a>
 						</div>
 					</div> <!-- end of row -->
 				</div> <!-- end of col // for equal left and right spacing -->
 			</div> <!-- end of 2ns layer button -->
+
 		</section>
     	<!-- end of interview -->
 
-
-
-
+    	<!-- arrow -->
+    	<section id="arrow2">
+			<div class="arrow2 animated infinite bounce delay-2s">
+				<a href="#dog-meet"><img class="img-fluid" src="assets/images/arrow.png" alt="arrow"></a>
+			</div>
+    	</section>
 
 
 		<section id="dog-meet" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
@@ -248,13 +279,14 @@
 
 
 
+
+	<!-- Youtube -->
+	<div id="dogsong"></div>
+
+
 	<footer class="mt-5">
 		<small>Hannah Panganiban | Cat vs Dog &copy; 2018</small>
 	</footer>
-
-
-
-
 
 
 
@@ -331,6 +363,7 @@
 	   return false;
 	}
 </script>
+
 
 
 </body>

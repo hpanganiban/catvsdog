@@ -109,6 +109,7 @@ function no() {
   }
 
   function yes() {
+  $('#dogyes').attr('disabled','disabled');
   var noyesdialogue = document.getElementById('noyesdialogue');
   var displaySetting = noyesdialogue.style.display;
   var dogyes = document.getElementById('dogyes');
@@ -124,6 +125,7 @@ function no() {
   }
 
   function no2() {
+    $('#dogno2').attr('disabled','disabled');
   var nonodialogue = document.getElementById('nonodialogue');
   var displaySetting = nonodialogue.style.display;
   var dogno2 = document.getElementById('dogno2');
@@ -234,3 +236,39 @@ $(document).ready(function(){
     $("#dogno").hide()
     });
 });
+
+
+/*Youtube*/
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('bgsound', {
+    height: '1',
+    width: '1',
+    videoId: 'Otn9ywlnXFc',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+      }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.setVolume(50);
+  event.target.playVideo();
+}
+
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    done = true;
+  }
+  event.target.setVolume(50);
+}
+
+
+
