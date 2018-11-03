@@ -42,7 +42,7 @@
 <body>
 
 <!-- Logo and Navigation -->
-	<div class="fixed-top">
+	<div id="navigation" class="fixed-top">
 		<a href="index.html"><img id="logo" class="float-left pt-2 ml-2" src="assets/images/logo.png" alt="logo"></a>
 
 		<nav id="hamburger" class="float-right">
@@ -65,30 +65,29 @@
 
 <!-- Cat Page Content -->
 	<main class="container-fluid">
-		<header id="cat-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-			<h1>Cat Lair</h1>
-		</header> <!-- end of header -->
+		<section id="cat-top">
+			<header id="story-header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+				<h1>Cat Lair</h1>
+			</header> <!-- end of header -->
 
+			<div id="cat-section">
+				<div class="row">
+					<div id="cat-img" class="col-12 col-md-4 col-lg-4 offset-lg-1">
+						<a onmouseover="playclip1();"><img src="assets/images/catboss.png" class="img-fluid" data-aos="zoom-out-left" data-aos-delay="1500" data-aos-duration="1000" alt="The Great Catsby"></a>
+					</div>
 
-		<section id="cat-section">
-			<div class="row">
+					<div class="col-12 col-md-8 col-lg-6">
+						<h2 id="story-title" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">The Great Catsby</h2>
 
-				<div id="cat-img" class="col-5 col-md-4 col-lg-4 offset-lg-1">
-					<a onmouseover="playclip1();"><img src="assets/images/catboss.png" class="img-fluid" data-aos="zoom-out-left" data-aos-delay="1500"data-aos-duration="1000" alt="The Great Catsby"></a>
-				</div>
+						<div id="cat-message" data-aos="fade-in" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">
+							<p id="cat-info">Welcome to the Cat Lair! It is I, The Great Catsby. You did a great job joining me.</p>
 
-				<div class="col-7 col-md-8 col-lg-6">
-					<h2 id="story-title" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">The Great Catsby</h2>
-
-					<div id="cat-message" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-delay="1500" data-aos-duration="1000">
-						<p id="cat-info">Welcome to the Cat Lair! It is I, The Great Catsby. You did a great job joining me.</p>
-
-						<p id="cat-info">There is a war. And we WILL win. Now scroll down and follow my commands. Everything will be clear to you after.</p>
+							<p id="cat-info">There is a war. And we WILL win. Now scroll down and follow my commands. Everything will be clear to you after.</p>
+						</div>
 					</div>
 				</div>
-				
-			</div> <!-- end of row -->
-		</section> <!-- end of section for cats -->
+			</div> <!-- end of cat section -->
+		</section> <!-- end of cat top -->
 
 
 		<section id="cat-command-title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">

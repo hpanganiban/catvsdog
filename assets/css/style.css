@@ -329,19 +329,9 @@ li a:focus {
 
 
 /*cat page*/
-#cat-header {
-	background-image: url(../images/titlebg.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	text-align: center;
-	height: 200px;
-	padding-top: 13vh;
-	margin-bottom: 10vh;
-}
-
 #cat-section {
 	margin-bottom: 10vh;
+	margin-top: 10vh;
 }
 
 #cat-message {
@@ -367,6 +357,7 @@ li a:focus {
 	height: 175px;
 	padding-top: 13vh;
 	margin-bottom: 10vh;
+	margin-top: 10vh;
 }
 
 
@@ -383,7 +374,7 @@ li a:focus {
 
 #cat-command {
 	background-color: rgb(0,0,0,0.5);
-	margin-top: 10vh;
+	margin-top: 5vh;
 	padding: 10px;
 	color: white;
 	text-align: center;
@@ -541,9 +532,8 @@ li a:focus {
 }
 
 #dog-top {
-	height: 100vh;
 	position: relative;
-	margin-bottom: 30vh;
+	margin-bottom: 50vh;
 }
 
 .arrow {
@@ -911,18 +901,16 @@ footer small {
 		height: 150px;
 	}
 
-	#story-section,
-	#dog-section {
-	margin-top: 5vh;
+	#story-section	{
+		margin-top: 5vh;
 	}
 /*end of story page*/
 
 
 
 /*cat page*/
-	#cat-header,
 	#cat-section {
-		margin-bottom: 5vh;
+		margin-top: 1vh;
 	}
 
 	#cat-img,
@@ -953,6 +941,10 @@ footer small {
 
 
 /*dog page*/
+	#dog-section {
+		margin-top: 1vh;
+	}
+
 	#dog-name {
 		font-size: 20px;
 	}
@@ -968,6 +960,14 @@ footer small {
 
 	#dogdlg-body {
 		padding-top: 0px!important;
+	}
+
+	.arrow {
+		bottom: -10vh;
+	}
+
+	#order {
+		order: 2;
 	}
 /*end of dog page*/
 
@@ -1063,8 +1063,7 @@ footer small {
 		height: 175px;
 	}
 
-	#story-section,
-	#dog-section {
+	#story-section {
 		margin-top: 5vh;
 	}
 /*end of story page*/
@@ -1073,13 +1072,8 @@ footer small {
 
 
 /*cat page*/
-	#cat-header,
 	#cat-section {
-		margin-bottom: 5vh;
-	}
-
-	#cat-header {
-		padding-top: 9vh;
+		margin-top: 1vh;
 	}
 
 	#cat-img,
@@ -1109,6 +1103,10 @@ footer small {
 
 
 /*dog page*/
+	#dog-section {
+		margin-top: 1vh;
+	}
+
 	#dog-header {
 		padding-top: 9vh;
 	}
@@ -1120,6 +1118,14 @@ footer small {
 
 	#dogdlg-body {
 		padding-top: 0px!important;
+	}
+
+	.arrow {
+		bottom: -10vh;
+	}
+
+	#order {
+		order: 2;
 	}
 /*end of dog page*/
 
@@ -1177,8 +1183,7 @@ footer small {
 
 /*Desktop Styles*/
 @media only screen and (min-width: 961px) {
-	#story-header,
-	#cat-header {
+	#story-header {
 		padding-top: 10vh;
 	}
 
@@ -1195,6 +1200,11 @@ footer small {
 	#cat-info,
 	#dog-info {
 		font-size: 20px;
+	}
+
+	#cat-top,
+	#dog-top {
+		height: 100vh;
 	}
 
 	#cat-modal-body {

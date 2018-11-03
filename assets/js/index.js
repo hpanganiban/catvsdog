@@ -18,7 +18,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  event.target.setVolume(70);
+  event.target.setVolume(100);
   event.target.playVideo();
 }
 
@@ -27,6 +27,6 @@ function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
     done = true;
   }
-  event.target.setVolume(70);
+  event.target.setVolume(100);
 }
 
