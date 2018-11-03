@@ -7,7 +7,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
 }
 
 body {
@@ -16,12 +15,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	height: 100%;
-	overflow: hidden;
-}
-
-main {
-	overflow: hidden;
 }
 
 h1 {
