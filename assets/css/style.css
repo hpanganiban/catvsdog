@@ -64,14 +64,14 @@ p {
 #navtoggle{
   position: absolute;
   right: 120px;
-  top: 0;
+  top: -15px;
   width: 80px;
 }
 
 #navtogglecat{
   position: absolute;
-  right: 120px;
-  top: 0;
+  right: 110px;
+  top: -15px;
   width: 100px;
 }
 
@@ -1141,6 +1141,10 @@ footer small {
 
 /*Desktop Styles*/
 @media only screen and (min-width: 961px) {
+	#navtogglecat {
+		top: -5px;
+	}
+
 	#story-header {
 		padding-top: 10vh;
 	}
