@@ -354,7 +354,7 @@ li a:focus {
 	background-position: center;
 	background-size: contain;
 	text-align: center;
-	height: 175px;
+	height: 150px;
 	padding-top: 13vh;
 	margin-bottom: 10vh;
 	margin-top: 10vh;
@@ -584,7 +584,7 @@ li a:focus {
 	background-position: center;
 	background-size: contain;
 	text-align: center;
-	height: 175px;
+	height: 150px;
 	padding-top: 13vh;
 	margin-top: 50vh;
 }
@@ -1120,6 +1120,10 @@ footer small {
 		padding-top: 0px!important;
 	}
 
+	#dog-meet {
+		padding-top: 9vh;
+	}
+
 	.arrow {
 		bottom: -10vh;
 	}
@@ -1190,6 +1194,11 @@ footer small {
 	#dog-header,
 	#cat-command-title {
 		padding-top: 10vh;
+	}
+
+	#dog-meet,
+	#cat-command-title {
+		height: 175px;
 	}
 
 	#about-title {
