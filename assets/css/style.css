@@ -17,10 +17,6 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
-	overflow-y: hidden;
-}
-
 h1 {
 	margin: 0;
 	padding: 0;
