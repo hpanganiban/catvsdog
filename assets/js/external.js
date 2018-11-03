@@ -100,7 +100,6 @@ function no() {
 
   if (displaySetting == 'block') {
     nodialogue.style.display = 'none';
-    dogno.innerHTML = 'No.. Do I smell bad?';
     }
 
   else {
@@ -116,7 +115,6 @@ function no() {
 
   if (displaySetting == 'block') {
     noyesdialogue.style.display = 'none';
-    dogyes.innerHTML = 'Yes';
     }
 
   else {
@@ -132,7 +130,6 @@ function no() {
 
   if (displaySetting == 'block') {
     nonodialogue.style.display = 'none';
-    dogno2.innerHTML = 'No';
     }
 
   else {
@@ -149,7 +146,6 @@ function reveal() {
 
   if (displaySetting == 'block') {
     revealdialogue.style.display = 'none';
-    dogreveal.innerHTML = 'I need to tell you something!';
     }
 
 else {
@@ -165,7 +161,6 @@ else {
 
   if (displaySetting == 'block') {
     revealtelldialogue.style.display = 'none';
-    dogtell.innerHTML = 'I need to tell you something!';
     }
 
 else {
@@ -184,7 +179,6 @@ function hide() {
 
   if (displaySetting == 'block') {
       hidedialogue.style.display = 'none';
-      doghide.innerHTML = 'err.. No?';
       }
 
   else {
@@ -194,7 +188,7 @@ function hide() {
 
   function imagine() {
   $('#dogimagine').attr('disabled','disabled');
-  var hideimaginationdialogue = document.getElementById('hideimaginedialogue');
+  var hideimaginedialogue = document.getElementById('hideimaginedialogue');
   var displaySetting = hideimaginedialogue.style.display;
   var dogimagine = document.getElementById('dogimagine');
 
@@ -204,6 +198,21 @@ function hide() {
 
   else {
       hideimaginedialogue.style.display = 'block';
+      }
+  }
+
+  function dot() {
+  $('#dogdot').attr('disabled','disabled');
+  var hidedotdialogue = document.getElementById('hidedotdialogue');
+  var displaySetting = hidedotdialogue.style.display;
+  var dogdot = document.getElementById('dogdot');
+
+  if (displaySetting == 'block') {
+      hidedotdialogue.style.display = 'none';
+      }
+
+  else {
+      hidedotdialogue.style.display = 'block';
       }
   }
 
@@ -270,6 +279,12 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#dogimagine").click(function () {
     $("#dogdot").hide()
+    });
+});
+
+$(document).ready(function(){
+  $("#dogdot").click(function () {
+    $("#dogimagine").hide()
     });
 });
 
