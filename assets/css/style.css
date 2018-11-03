@@ -5,6 +5,12 @@
 	font-family: 'Berkshire Swash', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+  height: 100%;
+}
+
 body {
 	margin: 0 auto;
 	background-image: url(../images/bg.png);
@@ -12,12 +18,7 @@ body {
 	background-attachment: fixed;
 	background-position: center;
 	height: 100%;
-	width: 100%;
 	overflow: auto;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 h1 {
