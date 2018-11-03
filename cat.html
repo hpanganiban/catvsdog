@@ -72,7 +72,7 @@
 				<h1>Cat Lair</h1>
 			</header> 
 
-			<div id="cat-section">
+			<section id="cat-section">
 				<div class="row">
 					<div id="cat-img" class="col-12 col-md-4 col-lg-4 offset-lg-1">
 						<a onmouseover="playclip1();"><img src="assets/images/catboss.png" class="img-fluid" data-aos="zoom-in" data-aos-delay="1500"data-aos-duration="1000" alt="The Great Catsby"></a>
@@ -88,7 +88,7 @@
 						</div>
 					</div>
 				</div>
-			</div> <!-- end of cat section -->
+			</section> <!-- end of cat section -->
 		</section> <!-- end of cat top -->
 
 
@@ -194,7 +194,23 @@
 <!-- aos script -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init();
+		AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
 	</script>
 
 <audio id="meow">
@@ -203,50 +219,6 @@
 </audio>
 
 <div id="sounddiv"><bgsound id="sound"></div>
-
-	
-
-<!-- navigation script -->
-<script>
-	var theToggle = document.getElementById('toggle');
-
-	function hasClass(elem, className) {
-		return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-	}
-
-	function addClass(elem, className) {
-	    if (!hasClass(elem, className)) {
-	    	elem.className += ' ' + className;
-	    }
-	}
-
-	function removeClass(elem, className) {
-		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-		if (hasClass(elem, className)) {
-	        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-	            newClass = newClass.replace(' ' + className + ' ', ' ');
-	        }
-	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-	    }
-	}
-
-	function toggleClass(elem, className) {
-		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-	    if (hasClass(elem, className)) {
-	        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-	            newClass = newClass.replace( " " + className + " " , " " );
-	        }
-	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-	    } else {
-	        elem.className += ' ' + className;
-	    }
-	}
-
-	theToggle.onclick = function() {
-	   toggleClass(this, 'on');
-	   return false;
-	}
-</script>
 
 </body>
 </html>
