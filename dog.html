@@ -94,7 +94,6 @@
 		</section> <!-- end of section for dog -->
 
 
-
 		<!-- Interview -->
     	<section id="dog-interview">
     		<div class="row">
@@ -109,20 +108,21 @@
 				</div>
 			</div> <!-- end of opening message -->
 
+
 		    <!-- buttons layer 1 -->  
 			<div class="row">
 		        <div class="col-10 offset-1">
 					<div class="row">
 						<div class="col-12 col-md-4 col-lg-4">
-							<button onclick="no()" id="dogno" class="btn btn-block dog-option" type="button">No.. Do I smell bad?</button>
+							<button onclick="no()" id="dogno" class="btn btn-block dog-option" type="button">"No.. Do I smell bad?"</button>
 						</div>
 
 						<div class="col-12 col-md-4 col-lg-4">
-							<button onclick="reveal()" id="dogreveal" class="btn btn-block dog-option" type="button">I need to tell you something!</button>
+							<button onclick="reveal()" id="dogreveal" class="btn btn-block dog-option" type="button">"I need to tell you something!"</button>
 						</div>
 
 						<div class="col-12 col-md-4 col-lg-4">
-							<button onclick="hide()" id="doghide" class="btn btn-block dog-option" type="button">err.. No ?</button>
+							<button onclick="hide()" id="doghide" class="btn btn-block dog-option" type="button">"err.. No ?"</button>
 						</div>
 					</div> <!-- end of row -->
 		        </div> <!-- end of col // for equal left and right spacing -->
@@ -143,9 +143,27 @@
 						</div>
 					</div>
 
-					<div id="revealdialogue"><p id="dog-suspicious">What is it? Tell me!</p></div>
+					<div id="revealdialogue">
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg4.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">hmmm.. interesting. What is it?</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-					<div id="hide"><p id="dog-suspicious">hide</p></div>
+					<div id="hidedialogue">
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg6.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">.. ok? You sound suspicious.</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div> <!-- end of dialogue layer 1 -->
 
@@ -155,15 +173,23 @@
 				<div class="col-10 offset-1">
 					<div class="row">
 						<div class="col-6 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
-							<button onclick="yes()" id="dogyes" class="btn btn-block dog-option" type="button">Yes</button>
+							<button onclick="yes()" id="dogyes" class="btn btn-block dog-option" type="button">"Yes, I do."</button>
 						</div>
 
 						<div class="col-6 col-md-4 col-lg-4">
-							<button onclick="no2()" id="dogno2" class="btn btn-block dog-option" type="button">No</button>
+							<button onclick="no2()" id="dogno2" class="btn btn-block dog-option" type="button">"No.."</button>
 						</div>
 
 						<div class="col-12 col-md-4 col-lg-4 offset-md-4 offset-lg-4">
-							<button onclick="tell()" id="dogtell" class="btn btn-block dog-option" type="button">The cat has sent me to spy on you but..</button>
+							<button onclick="tell()" id="dogtell" class="btn btn-block dog-option" type="button">"The cat has sent me to spy on you but.."</button>
+						</div>
+
+						<div class="col-12 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
+							<button onclick="imagine()" id="dogimagine" class="btn btn-block dog-option" type="button">"It's just your imagination."</button>
+						</div>
+
+						<div class="col-12 col-md-4 col-lg-4">
+							<button onclick="dot()" id="dogdot" class="btn btn-block dog-option" type="button">"..."</button>
 						</div>
 					</div>
 				</div> <!-- end of col // for equal left and right spacing -->
@@ -196,7 +222,25 @@
 					</div>
 
 					<div id="revealtelldialogue">
-						<p id="dog-suspicious">What?! So you are a spy! You better start running or I'll bite you!</p>
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg2.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">What?! So you are a spy! You better start running or I'll bite you!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="hideimaginedialogue">
+						<div id="dog-suspicious">
+							<div class="media">
+								<img id="dogdlg-img" src="assets/images/dogdlg5.gif" class="img-fluid">
+								<div class="media-body">
+									<p id="dogdlg-body" class="pl-3 pt-4">I guess you're right. Maybe it's the hunger! Why don't you scroll down and meet the others while I get some food.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div> <!-- end of dialogue layer 2 -->
@@ -206,16 +250,12 @@
 			<div class="row">
 				<div class="col-10 offset-1">
 					<div class="row">
-						<div class="col-12 col-md-4 col-lg-4 offset-md-4 offset-lg-4">
-							<button onclick="tell()" id="dogtell" class="btn btn-block dog-option" type="button">The cat has sent me to spy on you but..</button>
+						<div class="col-12 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
+							<a href="run.html" target="_blank"><button id="dogrun" class="btn btn-block dog-option" type="button">"No! Waaaaah--" *runs*</button></a>
 						</div>
 
-						<div class="col-6 col-md-4 col-lg-4 offset-md-2 offset-lg-2">
-							<a href="run.html"><button id="dogrun" class="btn btn-block dog-option" type="button">No! Waaaaah-- *runs*</button></a>
-						</div>
-
-						<div class="col-6 col-md-4 col-lg-4">
-							<a href="stay.html"><button id="dogstay" class="btn btn-block dog-option" type="button">Wait! I want to join you!</button></a>
+						<div class="col-12 col-md-4 col-lg-4">
+							<a href="stay.html" target="_blank"><button id="dogstay" class="btn btn-block dog-option" type="button">"Wait! I want to join you!"</button></a>
 						</div>
 					</div> <!-- end of row -->
 				</div> <!-- end of col // for equal left and right spacing -->
@@ -223,6 +263,7 @@
 
 		</section>
     	<!-- end of interview -->
+    	
 
     	<!-- arrow -->
     	<section id="arrow2">
@@ -255,7 +296,7 @@
 
 		            <div id="dog-overflow" class="overlay">
 		                <p id="dog-name">Luke Skybarker</p>
-						<p id="dog-description">He's training to be a Jedi to fight <a id="dog-secret" href="secret.html">kittens</a>.</p>
+						<p id="dog-description">He's training to be a Jedi to fight <a id="dog-secret" href="secret.html" target="_blank">kittens</a>.</p>
 		            </div>
 			    </div>
 			</div> <!-- end of dog friends -->
@@ -269,6 +310,11 @@
 						<p id="dog-description">He's sniffs a lot and hunts sneaky robbers.</p>
 		            </div>
 			    </div>
+
+			    <!-- arrow -->
+				<div class="arrow3 animated infinite bounce delay-2s">
+					<a href="#dog-top"><img class="img-fluid" src="assets/images/arrow2.png" alt="arrow"></a>
+				</div>
 			</div> <!-- end of dog friends -->
 		</section> <!-- end of row -->
 
@@ -281,7 +327,7 @@
 
 
 	<!-- Youtube -->
-	<div id="dogsong"></div>
+	<div id="dogsound"></div>
 
 
 	<footer class="mt-5">

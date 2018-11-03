@@ -249,6 +249,8 @@ li a:focus {
 	background-color: rgb(0,0,0,0.5);
 	padding: 10px;
 	margin-top: 5vh;
+	border: 2px dashed grey;
+	border-radius: 10px;
 }
 
 #story-faqs {
@@ -305,6 +307,8 @@ li a:focus {
 	line-height: 25px;
 	border: none;
 	position: relative;
+	border: 1px dashed grey;
+	border-radius: 10px;
 }
 
 #accordion .panel-body:after{
@@ -343,6 +347,8 @@ li a:focus {
 #cat-message {
 	background-color: rgb(0,0,0,0.5);
 	height: 200px;
+	border: 2px dashed grey;
+	border-radius: 10px;
 }
 
 #cat-info {
@@ -383,6 +389,8 @@ li a:focus {
 	text-align: center;
 	font-family: 'Amaranth', sans-serif;
 	font-size: 20px;
+	border: 2px dashed grey;
+	border-radius: 10px;
 }
 
 #cat-btn {
@@ -393,6 +401,10 @@ li a:focus {
 
 .card {
 	background-color: rgb(0,0,0,0.5);
+	border-left: 2px dashed grey;
+	border-right: 2px dashed grey;
+	border-bottom: 2px dashed grey;
+	border-radius: 10px;
 }
 
 #cat-card {
@@ -531,6 +543,7 @@ li a:focus {
 #dog-top {
 	height: 100vh;
 	position: relative;
+	margin-bottom: 30vh;
 }
 
 .arrow {
@@ -549,6 +562,8 @@ li a:focus {
 #dog-message {
 	background-color: rgb(0,0,0,0.5);
 	height: 200px;
+	border: 2px dashed grey;
+	border-radius: 10px;
 }
 
 #dog-info {
@@ -581,7 +596,7 @@ li a:focus {
 	text-align: center;
 	height: 175px;
 	padding-top: 13vh;
-	margin-top: 10vh;
+	margin-top: 50vh;
 }
 
 #dog-friends {
@@ -591,6 +606,16 @@ li a:focus {
 #dog-friends-bottom {
 	margin-top: 10vh;
 	margin-bottom: 15vh;
+	position: relative;
+}
+
+.arrow3 {
+  position: absolute;
+  bottom: -20vh;
+  left: 50%;
+  margin-left:-20px;
+  width: 40px;
+  height: 40px;
 }
 
 #dog-overflow {
@@ -621,6 +646,8 @@ li a:focus {
 	font-family: 'Amaranth', sans-serif;
 	padding: 10px;
 	background-color: rgb(0,0,0,0.5);
+	border: 2px dashed grey;
+	border-radius: 10px;
 }
 
 .dog-option {
@@ -647,13 +674,16 @@ li a:focus {
 #revealdialogue,
 #revealtelldialogue,
 
-#hide,
+#hidedialogue,
+#hideimaginedialogue,
 
 #dogyes,
 #dogno2,
 #dogtell,
 #dogrun,
-#dogstay{
+#dogstay,
+#dogimagine,
+#dogdot {
   display: none;
 }
 
@@ -688,7 +718,7 @@ a:hover {
 	height: 100px;
 	width: 100%;
 	object-fit: cover;
-	border-radius: 20%;
+	border-radius: 10%;
 }
 
 #gallery-row2 {
@@ -710,6 +740,8 @@ a:hover {
 	font-size: 20px;
 	margin-top: 5vh;
 	animation-delay: 1s;
+	border: 2px dashed grey;
+	border-radius: 10px;
 }
 
 #gallery-overflow {
