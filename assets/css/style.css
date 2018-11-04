@@ -217,6 +217,7 @@ li a:focus {
 	height: 175px;
 	padding-top: 5vh;
 	margin-top: 15vh;
+	overflow: hidden;
 }
 
 #story-faqs-container {
