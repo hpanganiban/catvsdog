@@ -18,6 +18,7 @@ main {
 	background-attachment: fixed;
 	background-position: top;
 	background-repeat: repeat;
+	overflow: hidden;
 }
 
 h1 {
@@ -305,6 +306,31 @@ li a:focus {
 	font-family: 'Amaranth', sans-serif;
 	padding: 10px;
 }
+
+#cat-play {
+	margin-top: 10px;
+}
+
+#cat-play p {
+	background-color: #d09850;
+	text-align: center;
+	border: 1px dashed #c2b9b5;
+	border-radius: 10px;
+}
+
+.playbtn {
+	background-color: #d09850;
+	text-align: center;
+	border: 1px dashed #c2b9b5;
+	border-radius: 10px;
+}
+
+.playbtn:hover {
+	color: #d09850;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background: rgba(82, 60, 31, 1);
+}
+
 
 #cat-command-title {
 	background-image: url(../images/titlebg2.png);
@@ -872,7 +898,7 @@ footer small {
 		margin-top: 1vh;
 	}
 
-	#cat-img,
+	#catimg,
 	#dog-img {
 		padding-top: 5vh;
 	}
@@ -1035,7 +1061,7 @@ footer small {
 		margin-top: 1vh;
 	}
 
-	#cat-img,
+	#catimg,
 	#dog-img {
 		padding-top: 5vh;
 	}

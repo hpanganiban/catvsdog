@@ -74,7 +74,7 @@
 
 			<section id="cat-section">
 				<div class="row">
-					<div id="cat-img" class="col-12 col-md-4 col-lg-4 offset-lg-1">
+					<div id="catimg" class="col-12 col-md-4 col-lg-4 offset-lg-1">
 						<a onmouseover="playclip1();"><img src="assets/images/catboss.png" class="img-fluid" data-aos="zoom-out-right" data-aos-delay="500" data-aos-duration="1000" alt="The Great Catsby"></a>
 					</div>
 
@@ -86,6 +86,19 @@
 
 							<p id="cat-info">There is a war. And we WILL win. Now scroll down and follow my commands. Everything will be clear to you after.</p>
 						</div>
+
+						<div class="row">
+							<div id="cat-play" class="col-3">
+								<p>Try me!</p></div>
+							<div id="cat-play" class="col-1 offset-md-1 offset-lg-1">
+								<button class="btn playbtn" data-animation="rubberBand">A</button></div>
+							<div id="cat-play" class="col-1 offset-1">
+								<button class="btn playbtn" data-animation="jackInTheBox">B</button></div>
+							<div id="cat-play" class="col-1 offset-1">
+								<button class="btn playbtn" data-animation="wobble">C</button></div>
+							<div id="cat-play" class="col-1 offset-1">
+								<button class="btn playbtn" data-animation="flip">D</button></div>
+						</div> <!-- end of row button -->
 					</div>
 				</div>
 			</section> <!-- end of cat section -->
@@ -190,7 +203,25 @@
 	</footer>
 
 
+<!-- try me script -->
+<script>
+var playbtn = document.querySelectorAll("button"),
+	catimg = document.querySelector("#catimg");
 
+
+catimg.classList.add('animated');
+	for (var i = 0; i < playbtn.length; i++) {
+    	(function (i) {
+			playbtn[i].addEventListener('click', function () {
+				var animation = playbtn[i].getAttribute('data-animation');
+            	catimg.classList.add(animation);
+            	window.setTimeout(function () {
+                	catimg.classList.remove(animation);
+				}, 1000);
+        	});
+    	}(i));
+}
+</script>
 
 
 <!-- aos script -->
