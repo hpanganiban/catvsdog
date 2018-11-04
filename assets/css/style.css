@@ -505,6 +505,7 @@ li a:focus {
 
 #dog-section {
 	margin-top: 10vh;
+	overflow: hidden;
 }
 
 #dog-message {
