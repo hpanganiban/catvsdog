@@ -18,7 +18,6 @@ main {
 	background-attachment: fixed;
 	background-position: top;
 	background-repeat: repeat;
-	overflow: hidden;
 }
 
 h1 {
@@ -393,6 +392,10 @@ li a:focus {
 
 
 /*cat page*/
+#cat-overflow {
+	overflow: hidden;
+}
+
 #cat-section {
 	margin-bottom: 10vh;
 	margin-top: 10vh;
@@ -937,6 +940,11 @@ a:hover {
 	font-family: 'Amaranth', sans-serif;
 }
 
+#secret-message-second {
+	font-size: 20px;
+	font-family: 'Amaranth', sans-serif;
+}
+
 #secret-message {
 	font-size: 20px;
 }
@@ -944,7 +952,6 @@ a:hover {
 #secret-img {
 	display: block;
 	margin: 0 auto;
-	padding-top: 10vh;
 }
 /*end of secret page*/
 
