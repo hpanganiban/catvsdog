@@ -18,6 +18,7 @@ main {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
+	background-size: cover;
 }
 
 h1 {
@@ -830,10 +831,6 @@ footer small {
 
 /*Mobile Styles*/
 @media only screen and (max-width: 400px) {
-main {
-	background-attachment: fixed;
-}
-
 
 /*navigation*/
 	#logo {
