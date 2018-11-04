@@ -15,7 +15,6 @@ body {
 
 main {
 	background-image: url(../images/bg.png);
-	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: repeat;
@@ -560,7 +559,7 @@ li a:focus {
 
 .arrow3 {
   position: absolute;
-  bottom: -20vh;
+  bottom: -15vh;
   left: 50%;
   margin-left:-20px;
   width: 40px;
