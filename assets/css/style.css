@@ -1052,6 +1052,15 @@ footer small {
 	#cat-btn {
 	margin-top: 15vh;
 	}
+
+	#catlg-btn {
+		display: none;
+	}
+
+	#cat-play {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	}
 /*end of cat page*/
 
 
@@ -1082,7 +1091,7 @@ footer small {
 		bottom: -10vh;
 	}
 
-	#order {
+	#dog-order {
 		order: 2;
 	}
 /*end of dog page*/
@@ -1219,6 +1228,15 @@ footer small {
 	#cat-btn {
 	margin-top: 15vh;
 	}
+
+	#catlg-btn {
+		display: none;
+	}
+
+	#cat-play {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	}
 /*end of cat page*/
 
 
@@ -1343,6 +1361,10 @@ footer small {
 
 	#cat-modal-body {
 	padding-top: 5%;
+	}
+
+	#catsm-btn {
+		display: none;
 	}
 
 	.thumbnail-sm {
