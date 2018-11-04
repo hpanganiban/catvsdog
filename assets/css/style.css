@@ -68,15 +68,8 @@ p {
 #navtoggle{
   position: absolute;
   right: 120px;
-  top: -15px;
-  width: 80px;
-}
-
-#navtogglecat{
-  position: absolute;
-  right: 110px;
-  top: -15px;
-  width: 100px;
+  top: 0px;
+  width: 50px;
 }
 
 #navslide:hover{
@@ -314,8 +307,9 @@ li a:focus {
 #cat-play p {
 	background-color: #d09850;
 	text-align: center;
-	border: 1px dashed #c2b9b5;
+	border: 2px solid #c2b9b5;
 	border-radius: 10px;
+	padding: 6px 0;
 }
 
 .playbtn {
@@ -395,6 +389,13 @@ li a:focus {
 	margin-bottom: 20vh;
 	color: black;
 	text-decoration: none;
+}
+
+#cat-btn:hover,
+#go-to-dog:hover {
+	color: #d09850;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background: rgba(82, 60, 31, 1);
 }
 
 #cat-modal {
@@ -629,6 +630,12 @@ li a:focus {
 	border: 5px solid #c2b9b5;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
+}
+
+.dog-option:hover {
+	color: #d09850;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background: rgba(82, 60, 31, 1);
 }
 
 #dogdlg-img {
@@ -1172,8 +1179,8 @@ footer small {
 
 /*Desktop Styles*/
 @media only screen and (min-width: 961px) {
-	#navtogglecat {
-		top: -5px;
+	#navtoggle{
+		width: 80px;
 	}
 
 	#story-header {
