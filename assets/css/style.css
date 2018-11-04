@@ -193,15 +193,127 @@ li a:focus {
 	padding: 20px;
 }
 
+
+
+#story-lore {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	height: 100px;
+	background-image: url(../images/titlebg4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#story-lore h1 {
+  line-height: 100px;
+}
+
+#story-underline {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+#story-underline,
+#story-underline:hover,
+#story-underline:focus,
+#story-underline:active {
+  text-decoration: none;
+}
+
+#story-underline::after {
+  content: "";
+  position: absolute;
+}
+
+#story-lore #story-underline::after {
+  top: 65%;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s ease-out all .1s;
+}
+
+#story-lore:hover #story-underline::after {
+  width: 90%;
+  left: 5%;
+    transition: 0.5s ease all;
+}
+
+#story-characters {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	height: 100px;
+	background-image: url(../images/titlebg4.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+#story-characters h1 {
+  line-height:100px;
+}
+
+#story-characters #story-underline::after {
+  top: 65%;
+  height: 2px !important;
+  width: 40%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.4s ease-out all .1s;
+}
+
+#story-characters:hover #story-underline::after {
+  width: 90%;
+  left: 5%;
+    transition: 0.5s ease all;
+}
+
 #story-info {
 	color: white;
-	text-align: center;
+	text-align: justify;
 	font-family: 'Amaranth', sans-serif;
 	background-color: rgb(0,0,0,0.5);
-	padding: 10px;
-	margin-top: 5vh;
+	padding: 15px;
 	border: 2px dashed grey;
 	border-radius: 10px;
+}
+
+#story-card {
+	margin-top: 2vh;
+	background-color: rgb(0,0,0,0.5);
+	border: 2px dashed grey;
+	border-radius: 10px;
+}
+
+#story-card-img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+
+#story-card-title {
+	background-color: #d09850;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	color: black;
+}
+
+#story-card-text {
+	color: white;
+	font-family: 'Amaranth', sans-serif;
 }
 
 #story-faqs {
@@ -896,6 +1008,11 @@ footer small {
 	#story-section	{
 		margin-top: 5vh;
 	}
+
+	#story-info-container {
+		height: 200px;
+		overflow: auto;
+	}
 /*end of story page*/
 
 
@@ -1057,6 +1174,11 @@ footer small {
 
 	#story-section {
 		margin-top: 5vh;
+	}
+
+	#story-info-container {
+		height: 200px;
+		overflow: auto;
 	}
 /*end of story page*/
 
